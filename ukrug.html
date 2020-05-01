@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" media="screen" href="http://css/jQuery-text-fade-delay-master/fader.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://css/jQuery-text-fade-delay-master/demo.min.css" /> 
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-10 col-md-offset-1">
+				<h1>jQuery Text Fade Delay Demo</h1> 
+			</div>
+		</div>
+		<div class="row demo">
+			<div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">
+<ul id="quotes">
+	<li>
+		<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit!</blockquote> <cite>— Alabama</cite> </li>
+	<li>
+		<blockquote>Excepteur sint occaecat cupidatat non proident!</blockquote> <cite>— Georgia</cite> </li>
+	<li>
+		<blockquote>Duis aute irure dolor in reprehenderit?</blockquote> <cite>— Illinois</cite> </li>
+	<li>
+		<blockquote>Dolore eu fugiat nulla pariatur.</blockquote> <cite>— West Virginia</cite> </li>
+</ul>
+			</div>
+		</div>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type='text/javascript' src='http://js/jQuery-text-fade-delay-master/fader.min.js'></script>
+	<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$("#quotes").fader({
+		fadeSpeed: 800,
+		duration: 4500,
+		citeDelay: 1850,
+		citeFadeSpeed: 1200
+	})
+});
+	</script>
+</body>    
+</html>
